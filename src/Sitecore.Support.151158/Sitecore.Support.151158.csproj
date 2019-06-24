@@ -65,10 +65,12 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlHelper.cs" />
     <Compile Include="Modules\EmailCampaign\Messages\ABTestMessage.cs" />
     <Compile Include="Modules\EmailCampaign\Messages\HtmlMail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\EmailCampaign\Messages\WebPageMail.cs" />
+    <Compile Include="TypeResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\Sitecore.Support.151158.config" />

@@ -49,7 +49,7 @@ namespace Sitecore.Support.Modules.EmailCampaign.Messages
 
         protected override string CorrectHtml(string html, bool preview)
         {
-            HtmlHelper helper = new HtmlHelper(html);
+            Sitecore.Support.Modules.EmailCampaign.Core.HtmlHelper helper = new Sitecore.Support.Modules.EmailCampaign.Core.HtmlHelper(html);
             helper.CleanHtml();
             DateTime utcNow = DateTime.UtcNow;
             helper.InsertStyleSheets();
@@ -62,7 +62,7 @@ namespace Sitecore.Support.Modules.EmailCampaign.Messages
             });
             Util.TraceTimeDiff("Modify 'href' links", utcNow);
             utcNow = DateTime.UtcNow;
-            html = HtmlHelper.EncodeSrc(html);
+            html = Sitecore.Support.Modules.EmailCampaign.Core.HtmlHelper.EncodeSrc(html);
             Util.TraceTimeDiff("Encode 'src' links", utcNow);
             return html;
         }
@@ -80,7 +80,7 @@ namespace Sitecore.Support.Modules.EmailCampaign.Messages
                 var settings = ManagerRoot.Settings;
                 if (settings.EmbedImages)
                 {
-                    var htmlHelper = new HtmlHelper(Body);
+                    var htmlHelper = new Sitecore.Support.Modules.EmailCampaign.Core.HtmlHelper(Body);
                     var baseUrl = GetBaseUrl(preview, settings);
 
                     htmlHelper.CollectRelativeFiles(baseUrl);
