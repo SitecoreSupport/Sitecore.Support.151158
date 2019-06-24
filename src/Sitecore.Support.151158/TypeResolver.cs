@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Sitecore.Data.Items;
-using Sitecore.Modules.EmailCampaign.Messages;
-
-namespace Sitecore.Support.Modules.EmailCampaign.Core
+﻿namespace Sitecore.Support.Modules.EmailCampaign.Core
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using Sitecore.Data.Items;
+    using Sitecore.Modules.EmailCampaign.Messages;
+
     public class TypeResolver : Sitecore.Modules.EmailCampaign.Core.TypeResolver
     {
         public override MessageItem GetCorrectMessageObject(Item item)

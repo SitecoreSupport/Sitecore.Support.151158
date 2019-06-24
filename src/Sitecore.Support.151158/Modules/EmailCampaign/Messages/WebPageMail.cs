@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Sitecore.Data.Items;
-using Sitecore.ExM.Framework.Diagnostics;
-using Sitecore.Modules.EmailCampaign;
-using Sitecore.Modules.EmailCampaign.Core;
-using Sitecore.Modules.EmailCampaign.Core.Links;
-using Sitecore.Modules.EmailCampaign.Core.Pipelines.GenerateLink;
-using Sitecore.Modules.EmailCampaign.Messages;
-
-namespace Sitecore.Support.Modules.EmailCampaign.Messages
+﻿namespace Sitecore.Support.Modules.EmailCampaign.Messages
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Sitecore.Data.Items;
+    using Sitecore.ExM.Framework.Diagnostics;
+    using Sitecore.Modules.EmailCampaign;
+    using Sitecore.Modules.EmailCampaign.Core;
+    using Sitecore.Modules.EmailCampaign.Core.Links;
+    using Sitecore.Modules.EmailCampaign.Core.Pipelines.GenerateLink;
+    using Sitecore.Modules.EmailCampaign.Messages;
+
     public class WebPageMail : Sitecore.Modules.EmailCampaign.Messages.WebPageMail
     {
         private readonly WebPageMailSource curSource;

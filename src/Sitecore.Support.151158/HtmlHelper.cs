@@ -1,22 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Web;
-using Sitecore.Configuration;
-using Sitecore.Diagnostics;
-using Sitecore.ExM.Framework.Diagnostics;
-using Sitecore.Modules.EmailCampaign;
-using Sitecore.Modules.EmailCampaign.Core;
-using Sitecore.Resources.Media;
-using Sitecore.Web;
-using Sitecore.StringExtensions;
-
-namespace Sitecore.Support.Modules.EmailCampaign.Core
+﻿namespace Sitecore.Support.Modules.EmailCampaign.Core
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using System.Text.RegularExpressions;
+    using System.Web;
+    using Sitecore.Configuration;
+    using Sitecore.Diagnostics;
+    using Sitecore.ExM.Framework.Diagnostics;
+    using Sitecore.Modules.EmailCampaign;
+    using Sitecore.Modules.EmailCampaign.Core;
+    using Sitecore.Resources.Media;
+    using Sitecore.Web;
+    using Sitecore.StringExtensions;
+
     public class HtmlHelper : Sitecore.Modules.EmailCampaign.Core.HtmlHelper
     {
 
