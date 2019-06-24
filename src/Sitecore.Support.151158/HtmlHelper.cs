@@ -156,7 +156,7 @@ namespace Sitecore.Support.Modules.EmailCampaign.Core
             }
 
             byte[] byteContent;
-            using (var fin = new FileStream(filePath, FileMode.Open))
+            using (var fin = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
                 byteContent = new byte[(int)fin.Length];
                 fin.Read(byteContent, 0, (int)fin.Length);
